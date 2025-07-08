@@ -1,7 +1,8 @@
 
 ############################################################################## scRNA-seq section ########################################################################################
+source('function.R')
 
-# 01.umap plot ----
+# 01. umap plot ----
 Clean_sct.inte.rm.pt$cell.type.percise.new <- Clean_sct.inte.rm.pt$cell.type.minor
 Clean_sct.inte.rm.pt$cell.type.percise.new <- as.character(Clean_sct.inte.rm.pt$cell.type.percise.new)
 Clean_sct.inte.rm.pt$cell.type.percise.new[cd4.cells] <- 'Cd4+ T'
